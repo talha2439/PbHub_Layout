@@ -1,0 +1,135 @@
+:root {
+  --basic-blue: #09aff4;
+  --basic-purple: #181757;
+}
+
+main {
+  background-color: var(--basic-purple);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+#main-bg {
+  background: url("../images/div.overlay-photo-image-bg.svg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--basic-purple);
+}
+
+.heading_01 {
+  font-size: 18px;
+  color: var(--basic-blue);
+  font-weight: 700;
+  position: relative;
+  padding: 0 13px;
+  width: fit-content;
+}
+
+.heading_01:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  border-radius: 100%;
+  background-color: var(--basic-blue);
+}
+
+.heading_01::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 11px;
+  right: 0;
+  border-radius: 100%;
+  background-color: var(--basic-blue);
+}
+
+.wavy_underline {
+  text-decoration: underline wavy var(--basic-blue);
+  color: var(--basic-blue);
+}
+
+.custom_btn_01 {
+  border: 2px solid var(--basic-blue);
+  color: var(--basic-blue);
+  font-weight: 700;
+  border-radius: 0px 10px 0px 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+.custom_btn_01:hover {
+  background-color: var(--basic-blue);
+  color: #fff;
+}
+
+@property --myColor1 {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: false;
+}
+
+.custom_card_01 {
+  border: 2px solid var(--basic-blue);
+  background: linear-gradient(var(--myColor1), var(--myColor2));
+  transition: --myColor1 .5s, --myColor2 .5s;
+}
+
+.custom_card_01:hover {
+  --myColor1: #09aff4;
+  --myColor2: rgba(9, 175, 244, 0.3);
+  svg {
+    fill: #fff;
+  }
+  .card-link {
+    color: #fff;
+  }
+}
