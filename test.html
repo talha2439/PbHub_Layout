@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    /* #181757 */
+    /* background: linear-gradient(180deg, rgba(72, 32, 167, 0.6) 51.5%, rgba(72, 32, 167, 0) 84.5%); */
+    header {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(180deg, rgba(72, 32, 167, 0.6) 51.5%, rgba(72, 32, 167, 0) 84.5%);
+    }
+
+    header>div {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        /* background-color: #181757; */
+    }
+
+    header>div::after {
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        content: '';
+        position: absolute;
+        border-top: 100vh solid #181757;
+        border-right: 50vw solid transparent;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div>
+            <img src="assets/images/div.overlay-photo-image-bg.svg" alt="" class="position-absolute z-3 img-fluid w-100 pe-none">
+            <p class="text-white">  </p>
+        </div>
+    </header>
+</body>
+
+</html>
