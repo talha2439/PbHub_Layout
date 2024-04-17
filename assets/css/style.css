@@ -98,6 +98,7 @@ main {
   color: var(--basic-blue);
 }
 
+
 .custom_btn_01 {
   border: 2px solid var(--basic-blue);
   color: var(--basic-blue);
@@ -167,4 +168,18 @@ main {
 .custom_btn_02:hover{
   color: #fff;
   border: 2px solid #fff;
+}
+
+.placeholder-white::placeholder{
+  color: #fff;
+}
+.placeholder-blue::placeholder{
+  color: var(--basic-blue);
+}
+
+.placeholder-blue:focus ,
+.placeholder-white:focus
+{
+  outline: none !important;
+  box-shadow: none !important;
 }

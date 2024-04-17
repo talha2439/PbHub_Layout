@@ -21,44 +21,24 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Portfoilo
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Packages</a>
+                            <a class="nav-link" href="#portfoilo">Portfoilo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#plans">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                     <div>
@@ -143,7 +123,7 @@
             class="position-absolute z-3 img-fluid w-100 h-100 object-fit-cover pe-none" />
     </header>
     <main>
-        <section>
+        <section id="services">
             <div class="container">
                 <div class="d-flex align-items-end flex-wrap justify-content-center">
                     <div class="d-flex mx-auto flex-column align-items-center pt-5">
@@ -637,7 +617,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="counter">
             <div class="cards_bg">
                 <div class="container">
                     <div class="row g-4 row-cols-lg-4 row-cols-md-2 row-cols-1">
@@ -656,7 +636,7 @@
                                     </defs>
                                 </svg>
 
-                                <p class="mb-0 display-5 fw-bold"><span>750</span>+</p>
+                                <p class="mb-0 display-5 fw-bold"><span class="timer"></span>+</p>
                                 <p class="mb-0">Finished Projects</p>
                             </div>
                         </div>
@@ -669,7 +649,7 @@
                                             d="M53.889 10.2667H6.97524C6.60873 10.2667 6.3033 10.3889 6.05895 10.6334C5.81461 10.8778 5.69244 11.1528 5.69244 11.4584C5.69244 11.7639 5.81461 12.0389 6.05895 12.2834C6.3033 12.5278 6.60873 12.65 6.97524 12.65H52.7895V41.25C52.7895 42.2278 52.4535 43.0528 51.7816 43.725C51.1096 44.3972 50.285 44.7334 49.3076 44.7334H32.0814C31.7149 44.7334 31.4706 44.8556 31.3484 45.1L26.4005 49.8667V45.8334C26.4005 45.4667 26.2783 45.1917 26.034 45.0084C25.7896 44.825 25.5453 44.7334 25.3009 44.7334H6.97524C5.8757 44.7334 4.8067 44.3667 3.76824 43.6334C2.72979 42.9 2.21056 42.1056 2.21056 41.25V6.78336C2.21056 5.9278 2.54653 5.16391 3.21847 4.49169C3.89041 3.81947 4.71507 3.48336 5.69244 3.48336H49.3076C50.0406 3.48336 50.6515 3.66669 51.1402 4.03336C52.1175 4.52225 52.6062 5.50002 52.6062 6.96669C52.6062 7.21114 52.7284 7.45558 52.9727 7.70002C53.2171 7.94447 53.492 8.06669 53.7974 8.06669C54.1028 8.06669 54.3777 7.94447 54.6221 7.70002C54.8664 7.45558 54.9886 7.15002 54.9886 6.78336C54.9886 4.8278 54.2555 3.36113 52.7895 2.38336C51.8121 1.5278 50.6515 1.10002 49.3076 1.10002H5.69244C4.10421 1.10002 2.76033 1.68058 1.66079 2.84169C0.561246 4.0028 0.0114746 5.31669 0.0114746 6.78336V41.25C0.0114746 42.8389 0.744502 44.1834 2.21056 45.2834C3.67661 46.3834 5.26484 46.9334 6.97524 46.9334H24.0181V52.6167C24.0181 53.2278 24.2625 53.5945 24.7512 53.7167L25.1177 53.9C25.4842 53.9 25.7896 53.7778 26.034 53.5334L32.6312 46.9334H49.3076C50.8958 46.9334 52.2397 46.3834 53.3393 45.2834C54.4388 44.1834 54.9886 42.8389 54.9886 41.25V11.55C54.9886 11.1834 54.8664 10.8778 54.6221 10.6334C54.3777 10.3889 54.1334 10.2667 53.889 10.2667ZM9.17432 5.68336H6.97524C6.60873 5.68336 6.3033 5.80558 6.05895 6.05002C5.81461 6.29447 5.69244 6.56947 5.69244 6.87502C5.69244 7.18058 5.81461 7.45558 6.05895 7.70002C6.3033 7.94447 6.60873 8.06669 6.97524 8.06669H9.17432C9.54084 8.06669 9.81572 7.94447 9.99898 7.70002C10.1822 7.45558 10.2739 7.18058 10.2739 6.87502C10.2739 6.56947 10.1822 6.29447 9.99898 6.05002C9.81572 5.80558 9.54084 5.68336 9.17432 5.68336ZM15.9548 5.68336H13.7557C13.3892 5.68336 13.1143 5.80558 12.9311 6.05002C12.7478 6.29447 12.6562 6.56947 12.6562 6.87502C12.6562 7.18058 12.7478 7.45558 12.9311 7.70002C13.1143 7.94447 13.3892 8.06669 13.7557 8.06669H15.9548C16.3213 8.06669 16.6268 7.94447 16.8711 7.70002C17.1155 7.45558 17.2376 7.18058 17.2376 6.87502C17.2376 6.56947 17.1155 6.29447 16.8711 6.05002C16.6268 5.80558 16.3213 5.68336 15.9548 5.68336ZM49.3076 5.68336H46.9253C46.6809 5.68336 46.4366 5.80558 46.1922 6.05002C45.9479 6.29447 45.8257 6.56947 45.8257 6.87502C45.8257 7.18058 45.9479 7.45558 46.1922 7.70002C46.4366 7.94447 46.6809 8.06669 46.9253 8.06669H49.3076C49.5519 8.06669 49.7963 7.94447 50.0406 7.70002C50.285 7.45558 50.4071 7.18058 50.4071 6.87502C50.4071 6.56947 50.285 6.29447 50.0406 6.05002C49.7963 5.80558 49.5519 5.68336 49.3076 5.68336ZM22.9186 18.3334H9.17432C8.19695 18.3334 7.3723 18.6695 6.70035 19.3417C6.02841 20.0139 5.69244 20.8389 5.69244 21.8167V35.5667C5.69244 36.5445 6.02841 37.3695 6.70035 38.0417C7.3723 38.7139 8.19695 39.05 9.17432 39.05L9.54084 38.8667L9.90735 38.6834L17.2376 31.35L19.8032 34.1C20.0476 34.3445 20.3225 34.4667 20.6279 34.4667C20.9333 34.4667 21.2082 34.3445 21.4525 34.1C21.6969 33.8556 21.8191 33.5806 21.8191 33.275C21.8191 32.9695 21.6969 32.6945 21.4525 32.45L17.9707 28.9667C17.7263 28.7222 17.4514 28.6 17.146 28.6C16.8406 28.6 16.5657 28.7222 16.3213 28.9667L8.80781 36.6667C8.31912 36.4222 8.07478 36.0556 8.07478 35.5667V21.8167C8.07478 21.45 8.16641 21.175 8.34967 20.9917C8.53292 20.8084 8.80781 20.7167 9.17432 20.7167H22.9186C23.2851 20.7167 23.56 20.8084 23.7433 20.9917C23.9265 21.175 24.0181 21.45 24.0181 21.8167V35.5667C24.0181 35.8111 23.9265 36.0556 23.7433 36.3C23.56 36.5445 23.2851 36.6667 22.9186 36.6667H14.8553C14.6109 36.6667 14.3666 36.7889 14.1223 37.0334C13.8779 37.2778 13.7557 37.5528 13.7557 37.8584C13.7557 38.1639 13.8779 38.4389 14.1223 38.6834C14.3666 38.9278 14.6109 39.05 14.8553 39.05H22.9186C23.896 39.05 24.7206 38.7139 25.3926 38.0417C26.0645 37.3695 26.4005 36.5445 26.4005 35.5667V21.8167C26.4005 20.8389 26.0645 20.0139 25.3926 19.3417C24.7206 18.6695 23.896 18.3334 22.9186 18.3334ZM48.2081 20.5334H30.9819C30.6154 20.5334 30.31 20.6556 30.0656 20.9C29.8213 21.1445 29.6991 21.4195 29.6991 21.725C29.6991 22.0306 29.8213 22.3056 30.0656 22.55C30.31 22.7945 30.6154 22.9167 30.9819 22.9167H48.2081C48.4524 22.9167 48.6967 22.7945 48.9411 22.55C49.1854 22.3056 49.3076 22.0306 49.3076 21.725C49.3076 21.4195 49.1854 21.175 48.9411 20.9917C48.6967 20.8084 48.4524 20.7167 48.2081 20.7167V20.5334ZM48.2081 25.3H30.9819C30.6154 25.3 30.31 25.3917 30.0656 25.575C29.8213 25.7584 29.6991 26.0028 29.6991 26.3084C29.6991 26.6139 29.8213 26.8889 30.0656 27.1334C30.31 27.3778 30.6154 27.5 30.9819 27.5H48.2081C48.4524 27.5 48.6967 27.3778 48.9411 27.1334C49.1854 26.8889 49.3076 26.6139 49.3076 26.3084C49.3076 26.0028 49.1854 25.7584 48.9411 25.575C48.6967 25.3917 48.4524 25.3 48.2081 25.3ZM48.2081 29.7H30.9819C30.6154 29.7 30.31 29.8222 30.0656 30.0667C29.8213 30.3111 29.6991 30.5861 29.6991 30.8917C29.6991 31.1972 29.8213 31.4722 30.0656 31.7167C30.31 31.9611 30.6154 32.0834 30.9819 32.0834H48.2081C48.4524 32.0834 48.6967 31.9611 48.9411 31.7167C49.1854 31.4722 49.3076 31.1972 49.3076 30.8917C49.3076 30.5861 49.1854 30.3111 48.9411 30.0667C48.6967 29.8222 48.4524 29.7 48.2081 29.7ZM48.2081 34.2834H44.7262C44.3597 34.2834 44.0542 34.4056 43.8099 34.65C43.5655 34.8945 43.4434 35.1695 43.4434 35.475C43.4434 35.7806 43.5655 36.0556 43.8099 36.3C44.0542 36.5445 44.3597 36.6667 44.7262 36.6667H48.2081C48.4524 36.6667 48.6967 36.5445 48.9411 36.3C49.1854 36.0556 49.3076 35.7806 49.3076 35.475C49.3076 35.1695 49.1854 34.925 48.9411 34.7417C48.6967 34.5584 48.4524 34.4667 48.2081 34.4667V34.2834ZM40.1448 34.2834H36.6629C36.2964 34.2834 36.0215 34.4056 35.8382 34.65C35.655 34.8945 35.5633 35.1695 35.5633 35.475C35.5633 35.7806 35.655 36.0556 35.8382 36.3C36.0215 36.5445 36.2964 36.6667 36.6629 36.6667H40.1448C40.3891 36.6667 40.6334 36.5445 40.8778 36.3C41.1221 36.0556 41.2443 35.7806 41.2443 35.475C41.2443 35.1695 41.1221 34.925 40.8778 34.7417C40.6334 34.5584 40.3891 34.4667 40.1448 34.4667V34.2834Z" />
                                     </g>
                                 </svg>
-                                <p class="mb-0 display-5 fw-bold"><span>23</span>+</p>
+                                <p class="mb-0 display-5 fw-bold"><span class="timer"></span>+</p>
                                 <p class="mb-0">Created Jobs</p>
                             </div>
                         </div>
@@ -681,7 +661,7 @@
                                         d="M23.616 26.5833C27.456 26.5833 30.72 25.2694 33.408 22.6417C36.096 20.0139 37.44 16.8667 37.44 13.2C37.44 9.53333 36.096 6.41666 33.408 3.85C30.72 1.28333 27.456 0 23.616 0C19.776 0 16.512 1.28333 13.824 3.85C11.136 6.41666 9.792 9.53333 9.792 13.2C9.792 16.8667 11.136 20.0139 13.824 22.6417C16.512 25.2694 19.776 26.5833 23.616 26.5833ZM16.128 6.23333C18.176 4.27778 20.64 3.3 23.52 3.3C26.4 3.3 28.896 4.27778 31.008 6.23333C33.12 8.18889 34.176 10.5417 34.176 13.2917C34.176 16.0417 33.152 18.3944 31.104 20.35C29.056 22.3056 26.56 23.2833 23.616 23.2833C20.672 23.2833 18.176 22.3056 16.128 20.35C14.08 18.3944 13.056 16.0417 13.056 13.2917C13.056 10.5417 14.08 8.18889 16.128 6.23333ZM47.808 42.35C47.808 41.25 47.68 40.0583 47.424 38.775C47.168 37.4917 46.848 36.3306 46.464 35.2917C46.08 34.2528 45.568 33.1833 44.928 32.0833C44.288 30.9833 43.552 30.0361 42.72 29.2417C41.888 28.4472 40.832 27.8056 39.552 27.3167C38.272 26.8278 36.864 26.5833 35.328 26.5833C34.816 26.5833 34.048 26.8889 33.024 27.5L30.72 28.9667C29.952 29.4556 28.928 29.8833 27.648 30.25C26.368 30.6167 25.12 30.8 23.904 30.8C22.688 30.8 21.44 30.6167 20.16 30.25C18.88 29.8833 17.92 29.4556 17.28 28.9667L14.784 27.5C13.888 26.8889 13.184 26.5833 12.672 26.5833C11.136 26.5833 9.728 26.8278 8.448 27.3167C7.168 27.8056 6.08 28.4472 5.184 29.2417C4.288 30.0361 3.52 30.9833 2.88 32.0833C2.24 33.1833 1.728 34.2833 1.344 35.3833C0.96 36.4833 0.672 37.6444 0.48 38.8667C0.288 40.0889 0.16 41.2194 0.096 42.2583C0.032 43.2972 0 44.3667 0 45.4667C0 48.4 0.928 50.7222 2.784 52.4333C4.64 54.1444 7.104 55 10.176 55H37.824C40.768 55 43.2 54.1444 45.12 52.4333C47.04 50.7222 48 48.4 48 45.4667C48 44.3667 47.936 43.3278 47.808 42.35ZM42.816 50.05C41.536 51.15 39.872 51.7 37.824 51.7H10.176C8 51.7 6.304 51.15 5.088 50.05C3.872 48.95 3.264 47.4222 3.264 45.4667L3.456 42.5333C3.456 41.5556 3.584 40.5167 3.84 39.4167C4.096 38.3167 4.352 37.3083 4.608 36.3917C4.864 35.475 5.248 34.5889 5.76 33.7333C6.272 32.8778 6.848 32.175 7.488 31.625C8.128 31.075 8.864 30.6472 9.696 30.3417C10.528 30.0361 11.392 29.8833 12.288 29.8833L15.36 31.7167C16.384 32.3278 17.664 32.8472 19.2 33.275C20.736 33.7028 22.304 33.9167 23.904 33.9167C25.504 33.9167 27.104 33.7028 28.704 33.275C30.304 32.8472 31.552 32.3278 32.448 31.7167L35.52 29.8833C36.544 29.8833 37.472 30.0361 38.304 30.3417C39.136 30.6472 39.84 31.075 40.416 31.625C40.992 32.175 41.536 32.8778 42.048 33.7333C42.56 34.5889 42.976 35.475 43.296 36.3917C43.616 37.3083 43.872 38.3167 44.064 39.4167C44.256 40.5167 44.416 41.5556 44.544 42.5333V45.4667C44.544 47.4222 43.968 48.95 42.816 50.05Z" />
                                 </svg>
 
-                                <p class="mb-0 display-5 fw-bold"><span>200</span>+</p>
+                                <p class="mb-0 display-5 fw-bold"><span class="timer"></span>+</p>
                                 <p class="mb-0">Happy Customers</p>
                             </div>
                         </div>
@@ -700,7 +680,7 @@
                                     </defs>
                                 </svg>
 
-                                <p class="mb-0 display-5 fw-bold"><span>28</span>+</p>
+                                <p class="mb-0 display-5 fw-bold"><span class="timer"></span>+</p>
                                 <p class="mb-0">Years Of Experience</p>
                             </div>
                         </div>
@@ -708,7 +688,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="portfoilo">
             <div class="container mb-3">
                 <div class="d-flex align-items-end flex-wrap justify-content-center">
                     <div class="d-flex mx-auto flex-column align-items-center pt-5">
@@ -899,12 +879,11 @@
                 </div>
             </div>
         </section>
-
-        <section>
+        <section id="plans">
             <div class="container">
                 <div class="d-flex align-items-end flex-wrap justify-content-center">
                     <div class="d-flex mx-auto flex-column align-items-center pt-5">
-                        <p class="heading_01 mb-0">Our Services</p>
+                        <p class="heading_01 mb-0 text-uppercase">PRICING PLANS</p>
                         <p class="text-white display-5 fw-bold text-capitalize">
                             Services We Offer
                         </p>
@@ -1037,12 +1016,143 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
+        <section>
+            <div class="cards_bg py-5">
+                <div class="container text-white">
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="heading_01 mb-0 text-uppercase">TESTIMONIALS</p>
+                        <p class="display-5 fw-bold text-center">Customer Testimonials</p>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex align-items-center flex-column w-100">
+                                    <div class="mb-4">
+                                        <img src="assets/images/Ellipse 4.svg" class="img-fluid" alt="feedback">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Sedarchitecto
+                                            dolorum
+                                            inventore totam adipisci</p>
+                                        <p class="mb-0">Jhon Doe</p>
+                                        <p class="mb-0">Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center flex-column w-100">
+                                    <div class="mb-4">
+                                        <img src="assets/images/Ellipse 4.svg" class="img-fluid" alt="feedback">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Sedarchitecto
+                                            dolorum
+                                            inventore totam adipisci</p>
+                                        <p class="mb-0">Jhon Doe</p>
+                                        <p class="mb-0">Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center flex-column w-100">
+                                    <div class="mb-4">
+                                        <img src="assets/images/Ellipse 4.svg" class="img-fluid" alt="feedback">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Sedarchitecto
+                                            dolorum
+                                            inventore totam adipisci</p>
+                                        <p class="mb-0">Jhon Doe</p>
+                                        <p class="mb-0">Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <div class=" border border-info border-2 rounded-circle px-3 py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="2rem"
+                                    fill="var(--basic-blue)" viewBox="0 0 384 512">
+                                    <path
+                                        d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z" />
+                                </svg>
+                            </div>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <div class=" border border-info border-2 rounded-circle px-3 py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="2rem"
+                                    fill="var(--basic-blue)" viewBox="0 0 384 512">
+                                    <path
+                                        d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z" />
+                                </svg>
+                            </div>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="d-flex mx-auto flex-column align-items-center pt-5">
+                    <p class="heading_01 mb-0 text-uppercase">Contact Us</p>
+                    <p class="text-white display-5 fw-bold text-capitalize">
+                        Connect To Expand Online
+                    </p>
+                    <p class="text-white fw-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Sedarchitecto dolorum inventore totam adipisci
+                    </p>
+                </div>
+                <form>
+                    <div class="row gy-3 col-lg-6 m-auto mb-5">
+                        <div class="col-md-6">
+                            <input type="text" name="name"
+                                class="form-control py-2 bg-transparent border border-info rounded-pill text-white placeholder-white ps-4"
+                                id="" placeholder="Full Name*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email"
+                                class="form-control py-2 bg-transparent border border-info rounded-pill text-white placeholder-white ps-4"
+                                id="" placeholder="Email*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="phone"
+                                class="form-control py-2 bg-transparent border border-info rounded-pill text-white placeholder-white ps-4"
+                                id="" placeholder="Phone*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="country"
+                                class="form-control py-2 bg-transparent border border-info rounded-pill text-white placeholder-white ps-4"
+                                id="" placeholder="Country*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="intreset"
+                                class="form-control py-2 bg-transparent border border-info rounded-pill text-white placeholder-white ps-4"
+                                id="" placeholder="I am intreseted in">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="budget"
+                                class="form-control py-2 bg-transparent border border-info rounded-pill text-white placeholder-white ps-4"
+                                id="" placeholder="Budget">
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea name="" id=""
+                                class="w-100 form-control py-2 bg-transparent border border-info rounded-4 text-white placeholder-white ps-4"
+                                cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn custom_btn_01">Contact Our Team</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
         <section>
             <div class="cards_bg">
                 <div class="container">
@@ -1096,6 +1206,112 @@
             </div>
         </section>
     </main>
+
+    <footer style="background-color: var(--basic-purple);">
+        <div class="container text-white py-5">
+            <div class="text-center pb-4 pb-md-0 mb-5">
+                <p class="display-5 fw-bold">Subscribe to our Newsletter</p>
+                <p class="col-lg-5 col-md-9 m-auto">We handpick the very best deals, trends and product news - making
+                    sure you
+                    never miss a thing.</p>
+                <div class="d-flex justify-content-center mt-4">
+                    <div class="border border-info rounded-pill d-flex align-items-center pe-2">
+                        <input type="email"
+                            class="form-control bg-transparent border-0 placeholder-blue rounded-start-pill w-100 text-info"
+                            placeholder="Email Address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="var(--basic-blue)"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom border-white border-3 py-5 g-5 g-lg-0 m-auto">
+                <div class="col-lg-8">
+                    <div class="col-lg-7">
+                        <p class="h2 fw-bold mb-5">Brand Logo</p>
+                        <p class="h5 fw-normal mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor</p>
+                        <p class="h5 fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="mb-1 fw-bold">Lorem ipsum</p>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none link-light">Lorem ipsum</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Lorem ipsum</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Lorem ipsum</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Lorem ipsum</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Lorem ipsum</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-1 fw-bold">Partners & Advertisers</p>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none link-light">Why Brand?</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Safe Shopping</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Membership</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">FAQ’s</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Privacy Settings</a></li>
+                                <li><a href="#" class="text-decoration-none link-light">Privacy Policies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="d-flex justify-content-center justify-content-md-between mt-3 align-items-center flex-wrap gap-2">
+                <div>
+                    <p class="h5 fw-normal mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex gap-3 mb-0">
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#fff"
+                                    viewBox="0 0 320 512">
+                                    <path
+                                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#fff"
+                                    viewBox="0 0 576 512">
+                                    <path
+                                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#fff"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#fff"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
