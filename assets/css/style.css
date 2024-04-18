@@ -3,16 +3,29 @@
   --basic-purple: #181757;
 }
 
-main {
+main,section,footer {
   background-color: var(--basic-purple);
 }
+.navbar-nav .nav-link{
+  color: #fff;
+  position: relative;
+  transition:color .2s linear;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--basic-blue);
+}
+.navbar-nav  .nav-link:hover::after {
+  left: -5px;
+  top: 18px;
+  width: 6px;
+  content: "";
+  height: 6px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--basic-blue);
+}
 
-/* section{
-  min-height: 100vh;
-  height: 100%;
-} */
-
-.blue_text{
+.blue_text {
   color: var(--basic-blue);
 }
 
@@ -57,7 +70,7 @@ main {
   transform: translateX(24px);
 }
 
-#main-bg {
+header{
   position: relative;
   background: var(--basic-purple);
 }
@@ -94,10 +107,18 @@ main {
 }
 
 .wavy_underline {
-  text-decoration: underline wavy var(--basic-blue) 5px;
+  position: relative;
   color: var(--basic-blue);
 }
-
+.wavy_underline::after {
+  left: 0;
+  top: 45px;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: url("../images/Path208.svg") no-repeat center;
+}
 
 .custom_btn_01 {
   border: 2px solid var(--basic-blue);
@@ -107,10 +128,19 @@ main {
   padding: 10px 20px 10px 20px;
 }
 
-.custom_btn_01:hover , .nav-tabs > button.active {
+.custom_btn_01:hover,
+.nav-tabs > button.active
+{
   border: 2px solid var(--basic-blue);
-  background: linear-gradient(0deg, rgba(9, 175, 244, 0.6), rgba(9, 175, 244, 0.6));
+  background: linear-gradient(
+    0deg,
+    rgba(9, 175, 244, 0.6),
+    rgba(9, 175, 244, 0.6)
+  );
   color: #fff;
+  svg{
+    fill: #fff;
+  }
 }
 
 @property --myColor1 {
@@ -140,46 +170,45 @@ main {
   .card-link {
     color: #fff;
   }
-  .custom_btn_02{
+  .custom_btn_02 {
     color: #fff;
     border: 2px solid #fff;
   }
 }
 
-.cards_bg{
+.cards_bg {
   background: url("../images/div.overlay-cards-bg.svg") no-repeat;
   background-size: cover;
   padding: 80px 0;
 }
 
-.custom_card_02{
+.custom_card_02 {
   padding: 50px;
   background: #06092240;
   border: 1px solid var(--basic-blue);
   border-top: 4px solid var(--basic-blue);
 }
 
-.custom_btn_02{
+.custom_btn_02 {
   color: var(--basic-blue);
   padding: 10px 20px 10px 20px;
   border-radius: 0px 10px 0px 10px;
   border: 2px solid var(--basic-blue);
 }
-.custom_btn_02:hover{
+.custom_btn_02:hover {
   color: #fff;
   border: 2px solid #fff;
 }
 
-.placeholder-white::placeholder{
+.placeholder-white::placeholder {
   color: #fff;
 }
-.placeholder-blue::placeholder{
+.placeholder-blue::placeholder {
   color: var(--basic-blue);
 }
 
-.placeholder-blue:focus ,
-.placeholder-white:focus
-{
+.placeholder-blue:focus,
+.placeholder-white:focus {
   outline: none !important;
   box-shadow: none !important;
 }

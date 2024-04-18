@@ -37,7 +37,7 @@ let timeVal = [750, 23, 200, 28];
 let countdownCalled = false;
 
 window.addEventListener("scroll", () => {
-  if (!countdownCalled && window.scrollY >= counter.offsetTop) {
+  if (!countdownCalled && eval(window.scrollY+450) >= counter.offsetTop) {
     countdownCalled = true;
     for (let i = 0; i < timers.length; i++) {
       countDown(timers[i], timeVal[i]);
