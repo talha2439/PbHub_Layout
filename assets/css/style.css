@@ -11,10 +11,14 @@ main,section,footer {
   position: relative;
   transition:color .2s linear;
 }
-.navbar-nav .nav-link:hover {
+
+.navbar-nav .nav-link:hover ,
+.navbar-nav .lived
+{
   color: var(--basic-blue);
 }
-.navbar-nav  .nav-link:hover::after {
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .lived::after {
   left: -5px;
   top: 18px;
   width: 6px;
@@ -27,6 +31,10 @@ main,section,footer {
 
 .blue_text {
   color: var(--basic-blue);
+}
+
+.fs_custom_01{
+  font-size: 18px;
 }
 
 .checkbox {
@@ -124,6 +132,7 @@ header{
   border: 2px solid var(--basic-blue);
   color: var(--basic-blue);
   font-weight: 700;
+  font-size: 18px;
   border-radius: 0px 10px 0px 10px;
   padding: 10px 20px 10px 20px;
 }
