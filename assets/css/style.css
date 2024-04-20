@@ -1,20 +1,22 @@
 :root {
   --basic-blue: #09aff4;
   --basic-purple: #181757;
+  --card-bg: #282777;
 }
 
-main,section,footer {
+main,
+section,
+footer {
   background-color: var(--basic-purple);
 }
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
   color: #fff;
   position: relative;
-  transition:color .2s linear;
+  transition: color 0.2s linear;
 }
 
-.navbar-nav .nav-link:hover ,
-.navbar-nav .lived
-{
+.navbar-nav .nav-link:hover,
+.navbar-nav .lived {
   color: var(--basic-blue);
 }
 .navbar-nav .nav-link:hover::after,
@@ -33,7 +35,7 @@ main,section,footer {
   color: var(--basic-blue);
 }
 
-.fs_custom_01{
+.fs_custom_01 {
   font-size: 18px;
 }
 
@@ -78,7 +80,7 @@ main,section,footer {
   transform: translateX(24px);
 }
 
-header{
+header {
   position: relative;
   background: var(--basic-purple);
 }
@@ -138,8 +140,7 @@ header{
 }
 
 .custom_btn_01:hover,
-.nav-tabs > button.active
-{
+.nav-tabs > button.active {
   border: 2px solid var(--basic-blue);
   background: linear-gradient(
     0deg,
@@ -147,7 +148,7 @@ header{
     rgba(9, 175, 244, 0.6)
   );
   color: #fff;
-  svg{
+  svg {
     fill: #fff;
   }
 }
@@ -221,3 +222,23 @@ header{
   outline: none !important;
   box-shadow: none !important;
 }
+
+.card_icon {
+  background-color: var(--card-bg);
+}
+
+.card_icon > .card-body > .blue_text > span {
+  visibility: hidden;
+  transition: visibility .3s linear;
+}
+
+.card_icon:hover {
+  .card-body > .blue_text > span{
+    visibility: visible;
+  }
+}
+
+.pe-cursor{
+  cursor: pointer;
+}
+
