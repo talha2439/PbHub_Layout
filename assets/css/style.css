@@ -9,16 +9,32 @@ section,
 footer {
   background-color: var(--basic-purple);
 }
+
+.portfolio_01 > div,
 .navbar-nav .nav-link {
   color: #fff;
   position: relative;
   transition: color 0.2s linear;
 }
-
+.portfolio_01 > .active,
+.portfolio_01 > div:hover,
 .navbar-nav .nav-link:hover,
 .navbar-nav .lived {
   color: var(--basic-blue);
 }
+
+.portfolio_01 > div:hover::after,
+.portfolio_01 > .active::after {
+  left: -12px;
+  top: 10px;
+  width: 6px;
+  content: "";
+  height: 6px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--basic-blue);
+}
+
 .navbar-nav .nav-link:hover::after,
 .navbar-nav .lived::after {
   left: -5px;
@@ -192,6 +208,12 @@ header {
   padding: 80px 0;
 }
 
+.portfolio_bg{
+  background: url("../images/Group.svg") no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
 .custom_card_02 {
   padding: 50px;
   background: #06092240;
@@ -229,16 +251,26 @@ header {
 
 .card_icon > .card-body > .blue_text > span {
   visibility: hidden;
-  transition: visibility .3s linear;
+  transition: visibility 0.3s linear;
 }
 
 .card_icon:hover {
-  .card-body > .blue_text > span{
+  .card-body > .blue_text > span {
     visibility: visible;
   }
 }
 
-.pe-cursor{
+.pe-cursor {
   cursor: pointer;
 }
 
+.projects{
+  width: fit-content;
+}
+.projects > .position-absolute{
+  bottom: -20%;
+  transition: bottom .3s linear;
+}
+.projects:hover > .position-absolute{
+  bottom: 0;
+}
