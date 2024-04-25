@@ -10,6 +10,10 @@ footer {
   background-color: var(--basic-purple);
 }
 
+.custom_blue_bg{
+  background-color: var(--basic-blue);
+}
+
 .portfolio_01 > div,
 .navbar-nav .nav-link {
   color: #fff;
