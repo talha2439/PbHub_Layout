@@ -278,3 +278,30 @@ header {
 .projects:hover > .position-absolute{
   bottom: 0;
 }
+
+.custom_card_03{
+  border: 2px solid var(--basic-blue);
+  background: linear-gradient(to right, var(--myColor1), var(--myColor2));
+  transition: --myColor1 0.5s, --myColor2 0.5s;
+}
+
+.custom_card_03:hover {
+  --myColor1: #09aff4;
+  --myColor2: rgba(9, 175, 244, 0.3);
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: flex;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
