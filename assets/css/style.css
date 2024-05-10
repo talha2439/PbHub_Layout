@@ -10,6 +10,10 @@ footer {
   background-color: var(--basic-purple);
 }
 
+#main-bg{
+  min-height: 65vh;
+}
+
 .main_img {
   animation: myAni infinite 3s;
 }
@@ -28,12 +32,26 @@ footer {
   background-color: var(--basic-blue);
 }
 
+.hover_text
+{
+  transition: color .3s linear, fill .3s linear;
+}
+.hover_text:hover
+{
+  color: var(--basic-blue) !important;
+  svg
+  {
+    fill: var(--basic-blue);
+  }
+}
+
 .portfolio_01 > div,
 .navbar-nav .nav-link {
   color: #fff;
   position: relative;
   transition: color 0.2s linear;
 }
+
 .portfolio_01 > .active,
 .portfolio_01 > div:hover,
 .navbar-nav .nav-link:hover,
@@ -161,7 +179,7 @@ header {
   content: "";
   height: 100%;
   position: absolute;
-  background: url("../images/Path208.svg") no-repeat center;
+  background: url("../images/home/Path208.svg") no-repeat center;
 }
 
 .custom_btn_01 {
@@ -221,13 +239,13 @@ header {
 }
 
 .cards_bg {
-  background: url("../images/div.overlay-cards-bg.svg") no-repeat;
+  background: url("../images/others/div.overlay-cards-bg.svg") no-repeat;
   background-size: cover;
   padding: 80px 0;
 }
 
 .portfolio_bg {
-  background: url("../images/Group.svg") no-repeat;
+  background: url("../images/others/Group.svg") no-repeat;
   background-size: cover;
   padding: 80px 0;
 }
@@ -321,7 +339,7 @@ header {
 }
 
 .custom_border {
-  border: 2px solid var(--basic-blue) !important;
+  border: 2px solid var(--basic-blue);
 }
 
 .custom_accordion_icon::after {
@@ -341,4 +359,10 @@ header {
   transition: visibility 0.2s linear, opacity 0.2s linear;
   visibility: hidden;
   opacity: 0;
+}
+
+.comments-img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }
