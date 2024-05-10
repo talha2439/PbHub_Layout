@@ -10,7 +10,21 @@ footer {
   background-color: var(--basic-purple);
 }
 
-.custom_blue_bg{
+.main_img {
+  animation: myAni infinite 3s;
+}
+
+@keyframes myAni {
+  0%,
+  100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+}
+
+.custom_blue_bg {
   background-color: var(--basic-blue);
 }
 
@@ -212,7 +226,7 @@ header {
   padding: 80px 0;
 }
 
-.portfolio_bg{
+.portfolio_bg {
   background: url("../images/Group.svg") no-repeat;
   background-size: cover;
   padding: 80px 0;
@@ -268,18 +282,18 @@ header {
   cursor: pointer;
 }
 
-.projects{
+.projects {
   width: fit-content;
 }
-.projects > .position-absolute{
+.projects > .position-absolute {
   bottom: -20%;
-  transition: bottom .3s linear;
+  transition: bottom 0.3s linear;
 }
-.projects:hover > .position-absolute{
+.projects:hover > .position-absolute {
   bottom: 0;
 }
 
-.custom_card_03{
+.custom_card_03 {
   border: 2px solid var(--basic-blue);
   background: linear-gradient(to right, var(--myColor1), var(--myColor2));
   transition: --myColor1 0.5s, --myColor2 0.5s;
@@ -291,17 +305,40 @@ header {
 }
 
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item>div {
-        display: none;
-    }
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
 
-    .carousel-inner .carousel-item>div:first-child {
-        display: flex;
-    }
+  .carousel-inner .carousel-item > div:first-child {
+    display: flex;
+  }
 }
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
-    display: flex;
+  display: flex;
+}
+
+.custom_border {
+  border: 2px solid var(--basic-blue) !important;
+}
+
+.custom_accordion_icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(9,175,244)' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !important;
+}
+
+.custom_accordion_icon:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(9,175,244)' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E") !important;
+}
+
+.custom_accordion_icon:not(.collapsed) {
+  box-shadow: none;
+  color: var(--basic-blue);
+}
+
+#btn-back-to-top {
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
 }

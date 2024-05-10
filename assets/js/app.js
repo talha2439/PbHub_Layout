@@ -75,3 +75,23 @@ if (document.getElementById("carouselExample")) {
     });
   });
 }
+
+const mybutton = document.getElementById("btn-back-to-top");
+if (mybutton) {
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      mybutton.style.visibility = "visible";
+      mybutton.style.opacity = 1;
+    } else {
+      mybutton.style.visibility = "hidden";
+      mybutton.style.opacity = 0;
+    }
+  };
+  mybutton.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+}
