@@ -366,3 +366,7 @@ header {
   height: 60px;
   object-fit: cover;
 }
+
+.check-icon-list {
+  list-style-image: url('assets/images/blogs/Vector.svg');
+}
